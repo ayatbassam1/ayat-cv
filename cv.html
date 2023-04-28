@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> My CV | Ayat Bassam </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor=pink>
+<img src="photo.jpg" width="150px" height="200px">
+<center><h1> Ayat Bassam El-Shenawy </h1></center>
+<center><h5 id="time"> click on time below </h5></center>
+<center><button class="button" onclick="time();"> Time </button></center><br>
+<h3> Personal Information </h3>
+<h5><b>Address:</b>Tanta </h5>
+<h5>Phone Number:0101320494 </h5>
+<h5>Data of Birth:22/3/2001 </h5>
+<h5>E-mail:ayat57403@gmail.com </h5>
+<h5>Age:22 </h5>
+<hr>
+<h3>Work Experiances </h3>
+<h5>Training at Bank Misr</h5>
+<h5>I worked at Microsoft Corporation</h5>
+<h5>I trained at Misr Makasaa Company</h5>
+<hr>
+<h3>Skills</h3>
+<h5>Languages(AR-EN)</h5>
+<h5>Computer Skills</h5>
+<h5>MS Office apps</h5>
+<hr>
+<h3>Soft Skills</h3>
+<h5>Communication skills </h5>
+<h5>Presentation</h5>
+<h5>Time Managment</h5
+<h5>Team work</h5>
+<h5>Project Managment</h5>
+<hr>
+<h3>Education</h3>
+<p>I graduted from faculty of commerce department BIS Tanta University</p>
+<hr>
+<h3>References</h3>
+<h5>Available upon request</h5>
+
+<script>
+  function time(){
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) 
+         {
+            greeting = "Good morning";
+         } 
+        else if (time < 20)
+         {
+            greeting = "Good day";
+         } 
+        else {
+          greeting = "Good evening";
+             }
+          document.getElementById("time").innerHTML = greeting;
+
+}
+</script>
+</body>
+</html>
